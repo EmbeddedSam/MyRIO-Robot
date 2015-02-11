@@ -2,7 +2,9 @@
 <Project Type="Project" LVVersion="14008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Property Name="varPersistentID:{08D15EF8-1D35-41CF-8653-C62FEC0148E3}" Type="Ref">/My Computer/UI Variables.lvlib/All UI Loop Stop</Property>
+	<Property Name="varPersistentID:{0F29C913-7DEB-4E85-BF2E-039A378DE91E}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Direction</Property>
 	<Property Name="varPersistentID:{2BC2A5BB-BCA4-42DE-A155-236793E7EB5E}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Control State</Property>
+	<Property Name="varPersistentID:{2F242FC9-E37A-48D0-9963-889326E9FD9E}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Connected</Property>
 	<Property Name="varPersistentID:{41ED67AA-F50A-485F-9724-6114BAEA1A49}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 1 Setpoint</Property>
 	<Property Name="varPersistentID:{49107181-CC4D-4921-BCA6-3EC3F16B907B}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor3</Property>
 	<Property Name="varPersistentID:{5CFB63F1-E6EE-4937-B327-D9547A153471}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/CPU Usage</Property>
@@ -11,6 +13,7 @@
 	<Property Name="varPersistentID:{65919642-5FB8-440E-970D-2F65BBC20577}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor2</Property>
 	<Property Name="varPersistentID:{6AA29D0A-10B0-4276-964C-5D691856799B}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch2 Setpoint</Property>
 	<Property Name="varPersistentID:{7583A8EC-C811-4BBF-AD03-7216A74C4BC5}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 4 Setpoint</Property>
+	<Property Name="varPersistentID:{8E26039A-E995-4EB7-8415-CF735D2DD9CB}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Control</Property>
 	<Property Name="varPersistentID:{94175207-2D31-44AE-8F04-B816646D03EF}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 1 Config</Property>
 	<Property Name="varPersistentID:{943D02AD-4A58-4029-9C99-3472F6CC4125}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 4 Config</Property>
 	<Property Name="varPersistentID:{9E527D0D-DC65-4E91-817B-0B959C19F02C}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch3 Setpoint</Property>
@@ -21,7 +24,6 @@
 	<Property Name="varPersistentID:{E9E2DA81-CCBD-45FD-BE37-BE9E8C505C1B}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Boolean</Property>
 	<Property Name="varPersistentID:{F50573F2-8AA0-4496-9781-35D98F088A79}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/Contiguous Memory</Property>
 	<Property Name="varPersistentID:{FBD2BE42-4AAB-4127-9F22-DB0DB6D12DF1}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor4</Property>
-	<Property Name="varPersistentID:{FD14F0D9-D63F-4DED-B5A2-FBA9C394DAF2}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Direction</Property>
 	<Property Name="varPersistentID:{FFD393D8-F194-40D1-9E2B-1AD87F2B0412}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Critical Error</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -146,6 +148,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Error Sender EnumSam.ctl" Type="VI" URL="../controls/Error Sender EnumSam.ctl"/>
 			<Item Name="RT Error MessageSam.ctl" Type="VI" URL="../controls/RT Error MessageSam.ctl"/>
 			<Item Name="UI DataSam.ctl" Type="VI" URL="../controls/UI DataSam.ctl"/>
+			<Item Name="Web command parser enum.ctl" Type="VI" URL="../controls/Web command parser enum.ctl"/>
+			<Item Name="Variables to check enum.ctl" Type="VI" URL="../controls/Variables to check enum.ctl"/>
 		</Item>
 		<Item Name="Globals" Type="Folder">
 			<Item Name="RT Network Stream Endpoints.vi" Type="VI" URL="../globals/RT Network Stream Endpoints.vi"/>
@@ -156,6 +160,10 @@ AddOutputFilter chunkFilter
 			<Item Name="System Health and Monitoring.vi" Type="VI" URL="/G/LabVIEW Training Materials/LabVIEW Real-Time 2/2012_RT 2/RT 2/ExerciseSource Sam/Course Project/RT Loops/System Health and Monitoring.vi"/>
 			<Item Name="WatchDogSam.vi" Type="VI" URL="../RT Loops/WatchDogSam.vi"/>
 			<Item Name="Speed Control 1.vi" Type="VI" URL="../RT Loops/Speed Control 1.vi"/>
+			<Item Name="Web receiver.vi" Type="VI" URL="../Web receiver.vi"/>
+			<Item Name="PC Control.vi" Type="VI" URL="../RT Loops/PC Control.vi"/>
+			<Item Name="Web Control.vi" Type="VI" URL="../RT Loops/Web Control.vi"/>
+			<Item Name="Poll Web Variables For Changes.vi" Type="VI" URL="../RT Loops/Poll Web Variables For Changes.vi"/>
 		</Item>
 		<Item Name="RT subVIs" Type="Folder">
 			<Item Name="EncoderSpeed3.vi" Type="VI" URL="../RT subVIs/EncoderSpeed3.vi"/>
@@ -165,6 +173,7 @@ AddOutputFilter chunkFilter
 			<Item Name="EncoderSpeed4.vi" Type="VI" URL="../RT subVIs/EncoderSpeed4.vi"/>
 			<Item Name="PWMAutoDirection.vi" Type="VI" URL="../RT subVIs/PWMAutoDirection.vi"/>
 			<Item Name="PIDConfigArrays.vi" Type="VI" URL="../RT subVIs/PIDConfigArrays.vi"/>
+			<Item Name="Connect to Web Stream.vi" Type="VI" URL="../RT subVIs/Connect to Web Stream.vi"/>
 		</Item>
 		<Item Name="Deterministic Variables.lvlib" Type="Library" URL="../Deterministic Variables.lvlib"/>
 		<Item Name="Network Variables.lvlib" Type="Library" URL="../Network Variables.lvlib"/>
@@ -1627,7 +1636,7 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="web" Type="Web Service">
 			<Property Name="Bld_buildSpecName" Type="Str"></Property>
-			<Property Name="Bld_version.build" Type="Int">29</Property>
+			<Property Name="Bld_version.build" Type="Int">42</Property>
 			<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 			<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 			<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -1640,7 +1649,7 @@ AddOutputFilter chunkFilter
 			<Property Name="ws.serveDefaultDoc" Type="Bool">true</Property>
 			<Property Name="ws.SSE2" Type="Bool">true</Property>
 			<Property Name="ws.static_permissions" Type="Str"></Property>
-			<Property Name="ws.version.build" Type="Int">29</Property>
+			<Property Name="ws.version.build" Type="Int">42</Property>
 			<Property Name="ws.version.fix" Type="Int">0</Property>
 			<Property Name="ws.version.major" Type="Int">1</Property>
 			<Property Name="ws.version.minor" Type="Int">0</Property>
@@ -1663,10 +1672,17 @@ AddOutputFilter chunkFilter
 					<Property Name="ws.useHeaders" Type="Bool">true</Property>
 					<Property Name="ws.useStandardURL" Type="Bool">true</Property>
 				</Item>
+				<Item Name="receive.vi" Type="VI" URL="../Web Services/receive.vi">
+					<Property Name="ws.method" Type="Int">1</Property>
+					<Property Name="ws.type" Type="Int">1</Property>
+				</Item>
+				<Item Name="connect.vi" Type="VI" URL="../Web Services/connect.vi">
+					<Property Name="ws.method" Type="Int">1</Property>
+					<Property Name="ws.type" Type="Int">1</Property>
+				</Item>
 			</Item>
 			<Item Name="Startup VIs" Type="Startup VIs Container"/>
 		</Item>
-		<Item Name="RT Web Variables.vi" Type="VI" URL="../RT Web Variables.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Calculate Clock Settings.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate Clock Settings.vi"/>
