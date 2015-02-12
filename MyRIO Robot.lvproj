@@ -149,6 +149,7 @@ AddOutputFilter chunkFilter
 			<Item Name="RT Error MessageSam.ctl" Type="VI" URL="../controls/RT Error MessageSam.ctl"/>
 			<Item Name="UI DataSam.ctl" Type="VI" URL="../controls/UI DataSam.ctl"/>
 			<Item Name="Web command parser enum.ctl" Type="VI" URL="../controls/Web command parser enum.ctl"/>
+			<Item Name="Directions.ctl" Type="VI" URL="../controls/Directions.ctl"/>
 			<Item Name="Variables to check enum.ctl" Type="VI" URL="../controls/Variables to check enum.ctl"/>
 		</Item>
 		<Item Name="Globals" Type="Folder">
@@ -160,7 +161,6 @@ AddOutputFilter chunkFilter
 			<Item Name="System Health and Monitoring.vi" Type="VI" URL="/G/LabVIEW Training Materials/LabVIEW Real-Time 2/2012_RT 2/RT 2/ExerciseSource Sam/Course Project/RT Loops/System Health and Monitoring.vi"/>
 			<Item Name="WatchDogSam.vi" Type="VI" URL="../RT Loops/WatchDogSam.vi"/>
 			<Item Name="Speed Control 1.vi" Type="VI" URL="../RT Loops/Speed Control 1.vi"/>
-			<Item Name="Web receiver.vi" Type="VI" URL="../Web receiver.vi"/>
 			<Item Name="PC Control.vi" Type="VI" URL="../RT Loops/PC Control.vi"/>
 			<Item Name="Web Control.vi" Type="VI" URL="../RT Loops/Web Control.vi"/>
 			<Item Name="Poll Web Variables For Changes.vi" Type="VI" URL="../RT Loops/Poll Web Variables For Changes.vi"/>
@@ -1677,6 +1677,10 @@ AddOutputFilter chunkFilter
 					<Property Name="ws.type" Type="Int">1</Property>
 				</Item>
 				<Item Name="connect.vi" Type="VI" URL="../Web Services/connect.vi">
+					<Property Name="ws.method" Type="Int">1</Property>
+					<Property Name="ws.type" Type="Int">1</Property>
+				</Item>
+				<Item Name="Speed.vi" Type="VI" URL="../Web Services/Speed.vi">
 					<Property Name="ws.method" Type="Int">1</Property>
 					<Property Name="ws.type" Type="Int">1</Property>
 				</Item>

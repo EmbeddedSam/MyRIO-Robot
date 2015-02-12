@@ -1,2 +1,216 @@
-<h1>MyRIO Robot Web Service</h1>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<script>
+		function startControl()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
 
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/connect?Connect=1",true);
+			xmlhttp.send();
+		}
+		function stopControl()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/connect?Connect=0",true);
+			xmlhttp.send();
+		}
+		function fullSpeed()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/Speed?Speed1=100",true);
+			xmlhttp.send();
+		}
+		function halfSpeed()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/Speed?Speed1=50",true);
+			xmlhttp.send();
+		}
+		function noSpeed()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/Speed?Speed1=0",true);
+			xmlhttp.send();
+		}
+		function fullForwards()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/command?Direction=FullForwards",true);
+			xmlhttp.send();
+		}
+		function fullBackwards()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/command?Direction=FullBackwards",true);
+			xmlhttp.send();
+		}
+		function halfForwards()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/command?Direction=HalfForwards",true);
+			xmlhttp.send();
+		}
+		function halfBackwards()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/command?Direction=HalfBackwards",true);
+			xmlhttp.send();
+		}
+		function hardLeft()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/command?Direction=HardLeft",true);
+			xmlhttp.send();
+		}
+		function hardRight()
+		{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+	  		{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  			xmlhttp=new XMLHttpRequest();
+	  		}
+			xmlhttp.onreadystatechange=function()
+	  		{
+	      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	      		{
+	    			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+	      		}
+			}
+			xmlhttp.open("GET","http://172.16.0.1:8001/web/command?Direction=HardRight",true);
+			xmlhttp.send();
+		}
+	</script>
+	</head>
+	<body>
+
+	<h2>MyRIO Robot Controller</h2>
+	<button type="button" onclick="startControl()">Start Control</button>
+	<button type="button" onclick="stopControl()">Stop Control</button>
+	<button type="button" onclick="fullSpeed()">Full Speed</button>
+	<button type="button" onclick="halfSpeed()">Half Speed</button>
+	<button type="button" onclick="noSpeed()">Stop</button>
+	<button type="button" onclick="fullForwards()">Full Forwards</button>
+	<button type="button" onclick="fullBackwards()">Full Backwards</button>
+	<button type="button" onclick="halfForwards()">Half Forwards</button>
+	<button type="button" onclick="halfBackwards()">Half Backwards</button>
+	<button type="button" onclick="hardLeft()">Hard Left</button>
+	<button type="button" onclick="hardRight()">Hard Right</button>
+	<div id="myDiv"></div>
