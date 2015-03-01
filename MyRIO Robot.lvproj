@@ -18,6 +18,8 @@
 	<Property Name="varPersistentID:{943D02AD-4A58-4029-9C99-3472F6CC4125}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 4 Config</Property>
 	<Property Name="varPersistentID:{9E527D0D-DC65-4E91-817B-0B959C19F02C}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch3 Setpoint</Property>
 	<Property Name="varPersistentID:{A2A0C477-7182-4039-99B5-0FDCFE48520E}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Run Control 1</Property>
+	<Property Name="varPersistentID:{A5214D0B-E4A8-4BBD-8D2B-4FD87C44F03C}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch4 Actual Modbus Setpoint</Property>
+	<Property Name="varPersistentID:{AAB9A4D5-9324-462A-8B8E-99EAE538C818}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch3 Actual Modbus Setpoint</Property>
 	<Property Name="varPersistentID:{B0AD20DF-93AF-4712-AFAB-6540C87B3F49}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch3 Config</Property>
 	<Property Name="varPersistentID:{CC6C4CD4-D179-4E6E-94F4-A353C2868084}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor1</Property>
 	<Property Name="varPersistentID:{D52BBAB4-C23D-4703-A86E-6F1CCDF64A94}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch2 Config</Property>
@@ -146,6 +148,7 @@ AddOutputFilter chunkFilter
 			<Item Name="EncoderController.ctl" Type="VI" URL="../controls/EncoderController.ctl"/>
 			<Item Name="EncoderIndicator.ctl" Type="VI" URL="../controls/EncoderIndicator.ctl"/>
 			<Item Name="Error Sender EnumSam.ctl" Type="VI" URL="../controls/Error Sender EnumSam.ctl"/>
+			<Item Name="ModbusMasterState Enum.ctl" Type="VI" URL="../controls/ModbusMasterState Enum.ctl"/>
 			<Item Name="RT Error MessageSam.ctl" Type="VI" URL="../controls/RT Error MessageSam.ctl"/>
 			<Item Name="UI DataSam.ctl" Type="VI" URL="../controls/UI DataSam.ctl"/>
 			<Item Name="Web command parser enum.ctl" Type="VI" URL="../controls/Web command parser enum.ctl"/>
@@ -164,6 +167,8 @@ AddOutputFilter chunkFilter
 			<Item Name="PC Control.vi" Type="VI" URL="../RT Loops/PC Control.vi"/>
 			<Item Name="Web Control.vi" Type="VI" URL="../RT Loops/Web Control.vi"/>
 			<Item Name="Poll Web Variables For Changes.vi" Type="VI" URL="../RT Loops/Poll Web Variables For Changes.vi"/>
+			<Item Name="ModbusMaster.vi" Type="VI" URL="../RT Loops/ModbusMaster.vi"/>
+			<Item Name="Modbus Master on Desktop.vi" Type="VI" URL="../../../Project/Software/MyRIO Testing Software/Modbus Master on Desktop.vi"/>
 		</Item>
 		<Item Name="RT subVIs" Type="Folder">
 			<Item Name="EncoderSpeed3.vi" Type="VI" URL="../RT subVIs/EncoderSpeed3.vi"/>
@@ -1687,6 +1692,9 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Startup VIs" Type="Startup VIs Container"/>
 		</Item>
+		<Item Name="ModbusMaster.ctl" Type="VI" URL="../../../Project/Software/MyRIO Testing Software/ModbusMaster.ctl"/>
+		<Item Name="Modbus.ctl" Type="VI" URL="../../../Project/Software/MyRIO Testing Software/Modbus.ctl"/>
+		<Item Name="PSoCSpeedControl.vi" Type="VI" URL="../RT Loops/PSoCSpeedControl.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Calculate Clock Settings.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Calculate Clock Settings.vi"/>
@@ -1797,6 +1805,37 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 DIO Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/DIO/typedefs/myRIO v1.1 DIO Channels Enum.ctl"/>
 				<Item Name="myRIO v1.1 Open DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/DIO/vis/myRIO v1.1 Open DIO.vi"/>
 				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
+				<Item Name="SubVIs.lvlib" Type="Library" URL="/&lt;vilib&gt;/Modbus/subvis/SubVIs.lvlib"/>
+				<Item Name="Modbus Master.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Modbus/master/Modbus Master.lvclass"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

@@ -20,7 +20,7 @@
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typedefName1" Type="Str">Control ConfigurationSam.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../controls/Control ConfigurationSam.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S,A%!!"1!A!!!!!!)!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q!21!I!#W^V&gt;("V&gt;#"I;7&gt;I!"&amp;!#A!+&lt;X6U=(6U)'RP&gt;Q!!'%"1!!)!"!!&amp;$%^V&gt;("V&gt;#"397ZH:1!!31$R!!!!!!!!!!%=1W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O5W&amp;N,G.U&lt;!!E1&amp;!!!A!$!!961W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$GYA!!!"1!A!!!!!!&amp;!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q"(!0%!!!!!!!!!!2R$&lt;WZU=G^M)%.P&lt;G:J:X6S982J&lt;WZ497UO9X2M!#*!5!!"!!-61W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Ch 1 Setpoint" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global,Real-Time Features</Property>
@@ -51,7 +51,7 @@
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typedefName1" Type="Str">Control ConfigurationSam.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../controls/Control ConfigurationSam.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S,A%!!"1!A!!!!!!)!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q!21!I!#W^V&gt;("V&gt;#"I;7&gt;I!"&amp;!#A!+&lt;X6U=(6U)'RP&gt;Q!!'%"1!!)!"!!&amp;$%^V&gt;("V&gt;#"397ZH:1!!31$R!!!!!!!!!!%=1W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O5W&amp;N,G.U&lt;!!E1&amp;!!!A!$!!961W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$GYA!!!"1!A!!!!!!&amp;!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q"(!0%!!!!!!!!!!2R$&lt;WZU=G^M)%.P&lt;G:J:X6S982J&lt;WZ497UO9X2M!#*!5!!"!!-61W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Ch 4 Setpoint" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global,Real-Time Features</Property>
@@ -85,7 +85,7 @@
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typedefName1" Type="Str">Control ConfigurationSam.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../controls/Control ConfigurationSam.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S,A%!!"1!A!!!!!!)!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q!21!I!#W^V&gt;("V&gt;#"I;7&gt;I!"&amp;!#A!+&lt;X6U=(6U)'RP&gt;Q!!'%"1!!)!"!!&amp;$%^V&gt;("V&gt;#"397ZH:1!!31$R!!!!!!!!!!%=1W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O5W&amp;N,G.U&lt;!!E1&amp;!!!A!$!!961W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$GYA!!!"1!A!!!!!!&amp;!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q"(!0%!!!!!!!!!!2R$&lt;WZU=G^M)%.P&lt;G:J:X6S982J&lt;WZ497UO9X2M!#*!5!!"!!-61W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Ch2 Setpoint" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global,Real-Time Features</Property>
@@ -103,6 +103,19 @@
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"1!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="Ch3 Actual Modbus Setpoint" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global,Real-Time Features</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:BuffSize" Type="Str">50</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">True</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="Real-Time Features:ApplyNetworkConfig" Type="Str">False</Property>
+		<Property Name="Real-Time Features:BufferLength" Type="Str">1</Property>
+		<Property Name="Real-Time Features:UseBuffering" Type="Str">False</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!B(1!!!"1!A!!!!!!"!!N!!A!&amp;37ZU-49!!1!!!!!!!!!!!!!!!!</Property>
+	</Item>
 	<Item Name="Ch3 Config" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global,Real-Time Features</Property>
 		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
@@ -116,7 +129,7 @@
 		<Property Name="type" Type="Str">Global</Property>
 		<Property Name="typedefName1" Type="Str">Control ConfigurationSam.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../controls/Control ConfigurationSam.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%S,A%!!"1!A!!!!!!)!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q!21!I!#W^V&gt;("V&gt;#"I;7&gt;I!"&amp;!#A!+&lt;X6U=(6U)'RP&gt;Q!!'%"1!!)!"!!&amp;$%^V&gt;("V&gt;#"397ZH:1!!31$R!!!!!!!!!!%=1W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O5W&amp;N,G.U&lt;!!E1&amp;!!!A!$!!961W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$GYA!!!"1!A!!!!!!&amp;!"V!#A!7=(*P='^S&gt;'FP&lt;G&amp;M)'&gt;B;7YA+%ND+1!!(U!+!"BJ&lt;H2F:X*B&lt;#"H97FO)#B,9SJ5=S^5;3E!!#&amp;!#A!;:'6S;8:B&gt;'FW:3"H97FO)#B,9SJ5:#^5=SE!!":!5!!$!!!!!1!##6"*2#"(97FO=Q"(!0%!!!!!!!!!!2R$&lt;WZU=G^M)%.P&lt;G:J:X6S982J&lt;WZ497UO9X2M!#*!5!!"!!-61W^O&gt;(*P&lt;#"$&lt;WZG;7&gt;V=G&amp;U;7^O!!%!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="Ch3 Setpoint" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global,Real-Time Features</Property>
