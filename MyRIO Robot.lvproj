@@ -3,9 +3,11 @@
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Property Name="varPersistentID:{08D15EF8-1D35-41CF-8653-C62FEC0148E3}" Type="Ref">/My Computer/UI Variables.lvlib/All UI Loop Stop</Property>
 	<Property Name="varPersistentID:{0F29C913-7DEB-4E85-BF2E-039A378DE91E}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Direction</Property>
+	<Property Name="varPersistentID:{1FB920D3-3E20-4D81-A2A2-3FA8602542D8}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch2 Actual Modbus Setpoint</Property>
 	<Property Name="varPersistentID:{2BC2A5BB-BCA4-42DE-A155-236793E7EB5E}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Control State</Property>
 	<Property Name="varPersistentID:{2F242FC9-E37A-48D0-9963-889326E9FD9E}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Connected</Property>
 	<Property Name="varPersistentID:{41ED67AA-F50A-485F-9724-6114BAEA1A49}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 1 Setpoint</Property>
+	<Property Name="varPersistentID:{47024CD0-05E4-4F7F-BC07-6D11C6E5FA5E}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch1 Actual Modbus Setpoint</Property>
 	<Property Name="varPersistentID:{49107181-CC4D-4921-BCA6-3EC3F16B907B}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor3</Property>
 	<Property Name="varPersistentID:{5CFB63F1-E6EE-4937-B327-D9547A153471}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/CPU Usage</Property>
 	<Property Name="varPersistentID:{64203EA3-62DE-4499-B984-2E4C54BAF1BE}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Run Control 4</Property>
