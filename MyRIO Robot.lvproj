@@ -13,6 +13,7 @@
 	<Property Name="varPersistentID:{64203EA3-62DE-4499-B984-2E4C54BAF1BE}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Run Control 4</Property>
 	<Property Name="varPersistentID:{642B9ECA-97B7-4264-BB65-ECC1C20DBC15}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Connect</Property>
 	<Property Name="varPersistentID:{65919642-5FB8-440E-970D-2F65BBC20577}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor2</Property>
+	<Property Name="varPersistentID:{67C93222-FCCB-4F78-9F0C-4AAB93E4ED37}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch5 Setpoint</Property>
 	<Property Name="varPersistentID:{6AA29D0A-10B0-4276-964C-5D691856799B}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch2 Setpoint</Property>
 	<Property Name="varPersistentID:{7583A8EC-C811-4BBF-AD03-7216A74C4BC5}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch 4 Setpoint</Property>
 	<Property Name="varPersistentID:{8E26039A-E995-4EB7-8415-CF735D2DD9CB}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Control</Property>
@@ -23,7 +24,10 @@
 	<Property Name="varPersistentID:{A5214D0B-E4A8-4BBD-8D2B-4FD87C44F03C}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch4 Actual Modbus Setpoint</Property>
 	<Property Name="varPersistentID:{AAB9A4D5-9324-462A-8B8E-99EAE538C818}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch3 Actual Modbus Setpoint</Property>
 	<Property Name="varPersistentID:{B0AD20DF-93AF-4712-AFAB-6540C87B3F49}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch3 Config</Property>
+	<Property Name="varPersistentID:{B6E548D3-620D-4C4F-982D-5BAAF2C4AA58}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch5 Actual Modbus Setpoint</Property>
+	<Property Name="varPersistentID:{B8FBBF98-9E4D-4CCA-8549-1DB928B3A7D1}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/CompassHeading</Property>
 	<Property Name="varPersistentID:{CC6C4CD4-D179-4E6E-94F4-A353C2868084}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/SpeedMotor1</Property>
+	<Property Name="varPersistentID:{D025EC6C-CF9B-47FB-8ABB-323BD903FE1B}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch5 Config</Property>
 	<Property Name="varPersistentID:{D52BBAB4-C23D-4703-A86E-6F1CCDF64A94}" Type="Ref">/NI-myRIO-1900-03047493/Deterministic Variables.lvlib/Ch2 Config</Property>
 	<Property Name="varPersistentID:{E9E2DA81-CCBD-45FD-BE37-BE9E8C505C1B}" Type="Ref">/NI-myRIO-1900-03047493/WebServicesLibrary.lvlib/Boolean</Property>
 	<Property Name="varPersistentID:{F50573F2-8AA0-4496-9781-35D98F088A79}" Type="Ref">/NI-myRIO-1900-03047493/Network Variables.lvlib/Contiguous Memory</Property>
@@ -61,7 +65,32 @@
 		</Item>
 		<Item Name="UI Variables.lvlib" Type="Library" URL="../UI Variables.lvlib"/>
 		<Item Name="User InterfaceSam.vi" Type="VI" URL="../User InterfaceSam.vi"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="Compass Indicator.xctl" Type="XControl" URL="/&lt;vilib&gt;/robotics/Controls/Compass Indicator/Compass Indicator.xctl"/>
+				<Item Name="Draw Arc.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Arc.vi"/>
+				<Item Name="Draw Circle by Radius.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Draw Circle by Radius.vi"/>
+				<Item Name="Draw Multiple Lines.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Multiple Lines.vi"/>
+				<Item Name="Draw Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rect.vi"/>
+				<Item Name="Draw Text at Point.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text at Point.vi"/>
+				<Item Name="Draw Text in Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text in Rect.vi"/>
+				<Item Name="Empty Picture" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Empty Picture"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Hilite Color.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Hilite Color.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
+				<Item Name="NI_AAL_Angle.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Angle.lvlib"/>
+				<Item Name="NI_AngleManipulation.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/AngleManip/NI_AngleManipulation.lvlib"/>
+				<Item Name="NI_Robotics_Compass Picture.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Controls/Compass Indicator/Compass Picture/NI_Robotics_Compass Picture.lvlib"/>
+				<Item Name="NI_Robotics_Control Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Controls/Utilities/NI_Robotics_Control Utilities.lvlib"/>
+				<Item Name="PCT Pad String.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/PCT Pad String.vi"/>
+				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
+				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
+				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
+				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-03047493" Type="RT myRIO">
@@ -181,6 +210,7 @@ AddOutputFilter chunkFilter
 			<Item Name="PWMAutoDirection.vi" Type="VI" URL="../RT subVIs/PWMAutoDirection.vi"/>
 			<Item Name="PIDConfigArrays.vi" Type="VI" URL="../RT subVIs/PIDConfigArrays.vi"/>
 			<Item Name="Connect to Web Stream.vi" Type="VI" URL="../RT subVIs/Connect to Web Stream.vi"/>
+			<Item Name="ModbusMasterCompassCalibrator.vi" Type="VI" URL="../../../Project/Software/MyRIO Testing Software/ModbusMasterCompassCalibrator.vi"/>
 		</Item>
 		<Item Name="Deterministic Variables.lvlib" Type="Library" URL="../Deterministic Variables.lvlib"/>
 		<Item Name="Network Variables.lvlib" Type="Library" URL="../Network Variables.lvlib"/>
